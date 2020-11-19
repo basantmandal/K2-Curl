@@ -12,11 +12,14 @@ This K2 Curl Library helps in Sending HTTP requests and can be integrated with P
 
 **Usage
 
+```php
 // -------- HOW TO USE THE CURL LIBRARY -------- //
-    // Include the Library & You can change the alias of Namespace as anything, I used Curl
+
+// Include the Library & You can change the alias of Namespace as anything, I used Curl
+
     require_once __DIR__."/K2Curl.php";
     use Curl\K2_CURL as Curl;
-   
+
     $data = array("data1" => $_POST["data1"], "data2" => $_POST["data2"]);
 
     // CREATE A OBJECT OF K2_CURL Class
@@ -34,8 +37,7 @@ This K2 Curl Library helps in Sending HTTP requests and can be integrated with P
     // RETURNS ARRAY(error, output)
     $returnData = json_decode($result["output"]);
     // ------------------------------------------- //
-
-
+```
 
 
 Please note:- **This plugin is under development.**
