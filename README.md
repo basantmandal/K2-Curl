@@ -10,7 +10,7 @@ This K2 Curl Library helps in Sending HTTP requests and can be integrated with P
 
 **How can you use for test or learning purpose ? You can go through the index.php or else read below**
 
-**Usage
+##Usage
 
 ```php
 // -------- HOW TO USE THE CURL LIBRARY -------- //
