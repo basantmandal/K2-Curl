@@ -1,6 +1,6 @@
 # K2 Curl - PHP - CURL Library
 
-Easy Light Weight - PHP > 5.6 based CURL Library, Can be customized based on your needs.
+Easy Light Weight - PHP >= 5.6 based CURL Library, Can be customized based on your needs.
 This K2 Curl Library helps in Sending HTTP requests and can be integrated with PHP based Web APIs
 
 ## Features

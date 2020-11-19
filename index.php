@@ -5,36 +5,36 @@ use Curl\K2_CURL as Curl;
 
 // CHECK IF FORM IS POST & Contains Value in url Input
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["url"])) {
-	$url = $_POST["url"];
-	if (!empty($url)) {
+    $url = $_POST["url"];
+    if (!empty($url)) {
 
-		// -------- HOW TO USE THE CURL LIBRARY -------- //
-		$data = array("data1" => $_POST["data1"], "data2" => $_POST["data2"]);
+        // -------- HOW TO USE THE CURL LIBRARY -------- //
+        $data = array("data1" => $_POST["data1"], "data2" => $_POST["data2"]);
 
-		// CREATE A OBJECT OF K2_CURL Class
-		$obj = new Curl($url, "GET", $data, "");
+        // CREATE A OBJECT OF K2_CURL Class
+        $obj = new Curl($url, "GET", $data, "");
 
-		// ADDS SERVER AUTHENTICATION - If Required
-		$obj->set_authentication("username", "password");
+        // ADDS SERVER AUTHENTICATION - If Required
+        $obj->set_authentication("username", "password");
 
-		// ADDS UserAgent - If Required
-		$obj->set_userAgent('Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0');
+        // ADDS UserAgent - If Required
+        $obj->set_userAgent('Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0');
 
-		// INITIALISE/EXECUTE CURL - This is the last function to call after adding you add any Authentication & User Agent
-		$result = $obj->execCurl();
+        // INITIALISE/EXECUTE CURL - This is the last function to call after adding you add any Authentication & User Agent
+        $result = $obj->execCurl();
 
-		// RETURNS ARRAY(error, output)
-		$returnData = json_decode($result["output"]);
-		// ------------------------------------------- //
+        // RETURNS ARRAY(error, output)
+        $returnData = json_decode($result["output"]);
+        // ------------------------------------------- //
 
-		// Just For Showing Results
-		echo '<pre>';
-		print_r($result["error"]);
-		echo '</pre><pre>';
-		echo "<p><b>Total Result = " . count($returnData) . "</b><br><hr>";
-		print_r($returnData);
-		echo '</pre>';
-	}
+        // Just For Showing Results
+        echo '<pre>';
+        print_r($result["error"]);
+        echo '</pre><pre>';
+        echo "<p><b>Total Result = " . count($returnData) . "</b><br><hr>";
+        print_r($returnData);
+        echo '</pre>';
+    }
 }
 ?>
 <!DOCTYPE html>
