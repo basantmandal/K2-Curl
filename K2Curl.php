@@ -4,6 +4,7 @@
  * Can be easily customized as per your requirements
  * This Lightweight PHP Curl Library helps in Sending HTTP requests and can be integrated with PHP based Web APIs.
  * Author - Basant Mandal
+ * https://github.com/basantmandal/K2-Curl.git
  * Version - 0.0.1
  * Last Updated - 18 Nov 2020
  */
