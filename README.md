@@ -38,6 +38,3 @@ This K2 Curl Library helps in Sending HTTP requests and can be integrated with P
     $returnData = json_decode($result["output"]);
     // ------------------------------------------- //
 ```
-
-
-Please note:- **This plugin is under development.**
